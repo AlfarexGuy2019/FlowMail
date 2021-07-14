@@ -11,18 +11,16 @@
     <CommandBar Opened="CommandBar_Opened">
         <CommandBar.Content>
             <Grid>
-                <Button Content="File" Width="62" Margin="10,5,0,0" VerticalAlignment="Top"/>
-                <Button Content="Edit" Margin="72,5,0,0" VerticalAlignment="Stretch"/>
-                <Button Content="View" Margin="116,5,0,0" VerticalAlignment="Top"/>
-                <Button Content="Mail Flow" Margin="166,5,0,0" VerticalAlignment="Top"/>
-                <Button Content="Actions" Margin="245,5,0,0" VerticalAlignment="Top">
-                    <Button.Flyout>
-                        <Flyout>
-                            <Grid/>
-                        </Flyout>
-                    </Button.Flyout>
-                </Button>
-                <Button Content="Help" Margin="311,5,0,0" VerticalAlignment="Top"/>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="660*"/>
+                    <ColumnDefinition Width="131*"/>
+                </Grid.ColumnDefinitions>
+                <Button Content="File" Width="62" Margin="10,5,0,0" VerticalAlignment="Top" Background="Transparent"/>
+                <Button Content="Edit" Margin="72,5,0,0" VerticalAlignment="Stretch" Background="Transparent"/>
+                <Button Content="View" Margin="116,5,0,0" VerticalAlignment="Top" Background="Transparent"/>
+                <Button Content="Mail Flow" Margin="166,5,0,0" VerticalAlignment="Top" Background="Transparent"/>
+                <Button Content="Actions" Margin="245,5,0,0" VerticalAlignment="Top" Background="Transparent"/>
+                <Button Content="Help" Margin="311,5,0,0" VerticalAlignment="Top" Background="Transparent"/>
 
             </Grid>
         </CommandBar.Content>
