@@ -8,7 +8,7 @@
 
   <Identity
     Name="0accd252-2fe4-4fb5-b053-b077a4746672"
-    Publisher="CN=user"
+    Publisher="CN=Agnihotra Nath"
     Version="1.0.0.0" />
 
   <mp:PhoneIdentity PhoneProductId="0accd252-2fe4-4fb5-b053-b077a4746672" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>

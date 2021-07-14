@@ -8,8 +8,33 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid>
-        <Button Content="Hello World!" Height="35" Width="187" HorizontalAlignment="Center" Click="Button_Click"/>
+    <CommandBar Opened="CommandBar_Opened">
+        <CommandBar.Content>
+            <Grid>
+                <Button Content="File" Width="62" Margin="10,5,0,0" VerticalAlignment="Top"/>
+                <Button Content="Edit" Margin="72,5,0,0" VerticalAlignment="Stretch"/>
+                <Button Content="View" Margin="116,5,0,0" VerticalAlignment="Top"/>
+                <Button Content="Mail Flow" Margin="166,5,0,0" VerticalAlignment="Top"/>
+                <Button Content="Actions" Margin="245,5,0,0" VerticalAlignment="Top">
+                    <Button.Flyout>
+                        <Flyout>
+                            <Grid/>
+                        </Flyout>
+                    </Button.Flyout>
+                </Button>
+                <Button Content="Help" Margin="311,5,0,0" VerticalAlignment="Top"/>
 
-    </Grid>
+            </Grid>
+        </CommandBar.Content>
+        <AppBarButton Icon="Delete" Label="Accept"/>
+        <AppBarButton Icon="Mail" Label="Cancel"/>
+        <AppBarButton Icon="MailReply" Label="Reply"/>
+        <AppBarButton Icon="MailReplyAll" Label="Reply to All"/>
+        <AppBarButton Icon="Forward" Label="Forward"/>
+        <AppBarButton Icon="Account" Label="Account"/>
+        <AppBarButton Icon="NewWindow" Label="Open in New Window"/>
+        <AppBarButton Icon="Calendar" Label="Calender"/>
+    </CommandBar>
+
+
 </Page>

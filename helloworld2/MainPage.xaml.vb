@@ -9,4 +9,8 @@ Public NotInheritable Class MainPage
     Private Sub Button_Click(sender As Object, e As RoutedEventArgs)
 
     End Sub
+
+    Private Sub CommandBar_Opened(sender As Object, e As Object)
+
+    End Sub
 End Class
