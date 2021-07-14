@@ -8,7 +8,7 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" FlyoutBase.AttachedFlyout="{StaticResource TextControlCommandBarContextFlyout}">
 
-    <CommandBar Opened="CommandBar_Opened" Height="38">
+    <CommandBar Opened="CommandBar_Opened" Height="38" >
         <CommandBar.Content>
             <Grid>
                 <Grid.ColumnDefinitions>
@@ -22,7 +22,7 @@
                 <Button Content="Actions" Margin="245,5,0,0" VerticalAlignment="Top" Background="Transparent"/>
                 <Button Content="Help" Margin="311,5,0,0" VerticalAlignment="Top" Background="Transparent"/>
                 <Canvas/>
-                <PersonPicture HorizontalAlignment="Left" Margin="28,65,0,0" VerticalAlignment="Top"/>
+                <MediaElement Height="40" Width="100"/>
 
             </Grid>
         </CommandBar.Content>
@@ -34,7 +34,38 @@
         <AppBarButton Icon="Account" Label="Account"/>
         <AppBarButton Icon="NewWindow" Label="Open in New Window"/>
         <AppBarButton Icon="Calendar" Label="Calender"/>
-    </CommandBar>
+
+              <CommandBar.SecondaryCommands>
+                <AppBarButton Icon="Setting" Label="Settings">
+                    <AppBarButton.KeyboardAccelerators>
+                        <KeyboardAccelerator Modifiers="Control" Key="S" />
+                    </AppBarButton.KeyboardAccelerators>
+                </AppBarButton>
+                <AppBarButton Icon="Add" Label="Button 1">
+                    <AppBarButton.KeyboardAccelerators>
+                        <KeyboardAccelerator Modifiers="Control" Key="N" />
+                    </AppBarButton.KeyboardAccelerators>
+                </AppBarButton>
+                <AppBarButton Icon="Delete" Label="Button 2">
+                    <AppBarButton.KeyboardAccelerators>
+                        <KeyboardAccelerator Key="Delete" />
+                    </AppBarButton.KeyboardAccelerators>
+                </AppBarButton>
+                <AppBarSeparator />
+                <AppBarButton Icon="FontDecrease" Label="Button 3">
+                    <AppBarButton.KeyboardAccelerators>
+                        <KeyboardAccelerator Modifiers="Control" Key="Subtract" />
+                    </AppBarButton.KeyboardAccelerators>
+                </AppBarButton>
+                <AppBarButton Icon="FontIncrease" Label="Button 4">
+                    <AppBarButton.KeyboardAccelerators>
+                        <KeyboardAccelerator Modifiers="Control" Key="Add" />
+                    </AppBarButton.KeyboardAccelerators>
+                </AppBarButton>
+            </CommandBar.SecondaryCommands>
+       
+        
+        </CommandBar>
 
 
 </Page>
