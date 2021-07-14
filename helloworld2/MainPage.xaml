@@ -8,7 +8,7 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" FlyoutBase.AttachedFlyout="{StaticResource TextControlCommandBarContextFlyout}">
 
-    <CommandBar Opened="CommandBar_Opened" Height="37">
+    <CommandBar Opened="CommandBar_Opened" Height="38">
         <CommandBar.Content>
             <Grid>
                 <Grid.ColumnDefinitions>
